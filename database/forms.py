@@ -7,6 +7,7 @@ colors = (
         (4, 'Green'),
         (5, 'Blue'),
         (6, 'Purple'),
+        (7, 'Brown')
     )
 
 shapes = (
