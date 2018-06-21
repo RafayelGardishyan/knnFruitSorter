@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title%}Input{%endblock%}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    Enter your fruit name:
+    <input type="text" name="name">
+    <input class="btn btn-success"  type="submit" value="Submit" />
+</form>
+{% endblock %}

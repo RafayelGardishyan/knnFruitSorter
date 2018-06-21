@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title%}Input{%endblock%}
+{% block content %}
+  <script src="https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js"></script>
+<form action="/input" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input class="btn btn-success" type="submit" value="Submit" />
+</form>
+{% endblock %}

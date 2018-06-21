@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title%}Input{%endblock%}
+{% block content %}
+<h3>Thank you!</h3>
+<p>Your fruit is a/an <b>{{ type }}</b></p>
+<p><b>Not the right fruit?</b> <a href="/edit/{{ id }}">Edit >>></a></p>
+{% endblock %}
