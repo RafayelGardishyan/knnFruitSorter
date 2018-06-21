@@ -5,6 +5,7 @@ class Fruit(models.Model):
     colors = (
         (1, 'Red'),
         (2, 'Orange'),
+        (7, 'Brown'),
         (3, 'Yellow'),
         (4, 'Green'),
         (5, 'Blue'),
