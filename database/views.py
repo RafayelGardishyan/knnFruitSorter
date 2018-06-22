@@ -94,7 +94,7 @@ def edit(request, id):
         f = Fruit.objects.get(id=id)
         f.name = request.POST['name'].lower().capitalize()
         f.save()
-        return redirect('/view/' + id)
+        return redirect('/view/' + str(id))
     else:
         return render(request, "edit.html", {})
 
