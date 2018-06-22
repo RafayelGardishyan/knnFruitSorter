@@ -97,3 +97,7 @@ def edit(request, id):
         return redirect('/')
     else:
         return render(request, "edit.html", {})
+
+def view(request, id):
+    ftype = Fruit.objects.get(id=id).name
+    return render(request, 'sorted.html', {"type": ftype, "id": id})
