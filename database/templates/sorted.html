@@ -2,8 +2,9 @@
 {% block title%}Input{%endblock%}
 {% block content %}
 <h3>Thank you!</h3>
-<a class="btn btn-danger" href="/input">Sort a new fruit</a>
+
 <p>Your fruit is a/an <b>{{ type }}</b><br>
 <i>More informations about your fruit on <a href="https://google.com/search?q={{ type }}">Google</a> or <a href="https://en.wikipedia.org/wiki/{{ type }}">Wikipedia</a></i></p>
 <p><b>Not the right fruit?</b> <a class="text-danger" href="/edit/{{ id }}">Edit >>></a></p>
+<a class="btn btn-danger" href="/input">Sort a new fruit</a>
 {% endblock %}
