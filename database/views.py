@@ -52,7 +52,8 @@ def sort(array):
 
 def index(request):
     count = Fruit.objects.count()
-    return render(request, 'index.html', {'count': count})
+    unique_count = Fruit.objects.values('name').distinct().count()
+    return render(request, 'index.html', {'count': count, 'unique': unique_count})
 
 
 def enter(request):
