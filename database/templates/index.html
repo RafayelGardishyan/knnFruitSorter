@@ -1,8 +1,20 @@
 {% extends "base.html" %}
 {% block title%}Input{%endblock%}
 {% block content %}
-<h3>{{ count }} fruits sorted</h3>
-<p>This is a Machine Learning Algorithm based on k Nearest Neighbours with sorts fruit based on input data (Size, Color, Shape and Texture).
-Every time, when a user adds a fruit the ML learns to sort fruits better and better. <b>Disclaimer: This ML Algorithm is not going to kill humans</b></p>
-<p>Help this ML to learn better sorting. <br><br> <a class="btn btn-success btn-lg" href="/input">Sort your fruit</a></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<h3><span class="counter">{{ count }}</span> fruits sorted</h3>
+<p>This is a Machine Learning Algorithm based on k Nearest Neighbours which sorts fruit based on input data (Size, Color, Shape and Texture).
+Every time, when a user adds a fruit the ML learns to sort fruits better and better. <br><b class="text-danger">Disclaimer: This ML Algorithm is not going to kill humans</b></p>
+<p>Help this ML to learn better sorting. <br><br> <a class="btn btn-danger btn-lg" href="/input">Sort your fruit</a></p>
+<script >
+$({ Counter: 0 }).animate({
+  Counter: $('.counter').text()
+}, {
+  duration: 1500,
+  easing: 'swing',
+  step: function() {
+    $('.counter').text(Math.ceil(this.Counter));
+  }
+});
+</script>
 {% endblock %}
