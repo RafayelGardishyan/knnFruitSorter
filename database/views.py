@@ -72,7 +72,7 @@ def enter(request):
             ftype = get_knn(x, y, [int(form.cleaned_data['color']),
                                    int(form.cleaned_data['size']),
                                    int(form.cleaned_data['texture']),
-                                   int(form.cleaned_data['shape'])], k=2)
+                                   int(form.cleaned_data['shape'])], k=3)
 
             f = Fruit()
             f.name = ftype
