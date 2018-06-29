@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block title%}ML Algorithme{%endblock%}
 {% block content %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <h4 class="fruits"><span class="counter">{{ count }}</span> fruits sorted <br>And <span class="unique">{{ unique}}</span> unique fruits</h4>
+<div style="height:57px; width:57px;" id="orange"></div>
 <p>This is a Machine Learning Algorithm based on k Nearest Neighbours which sorts fruit based on input data (Size, Color, Shape and Texture).
 Every time, when a user adds a fruit the ML learns to sort fruits better and better. <br><b class="text-danger">Disclaimer: This ML Algorithm is not going to kill humans</b></p>
 <p>Help this ML to learn better sorting. <br><br> <a class="btn btn-danger btn-lg" href="/input">Sort your fruit</a></p>
